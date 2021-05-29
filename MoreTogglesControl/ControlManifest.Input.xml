@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest>
+  <control namespace="DancingWithCrmControls" constructor="MoreTogglesControl" version="1.0.0" display-name-key="More Toggles Control" description-key="Allows to replace standard Yes/No controls with variaty of toggles from MoreToggles.css" control-type="standard" preview-image="img/preview.png">
+    <property name="boundField" display-name-key="Main field" description-key="Main field" of-type="TwoOptions" usage="bound" required="true" />
+    <property name="toggleClass" display-name-key="Toggle Class" description-key="More toggle class (.mt-check-garden by default)" of-type="SingleLine.Text" usage="input" required="false" />
+    <property name="toggleSize" display-name-key="Toggle Size" description-key="Allows you to control size of the toggle in pixels (provide coresponding number of pixels)" of-type="Whole.None" usage="input" required="false" />
+    <property name="showLable" display-name-key="Show label" description-key="Show lable for the selected option (disabled by default)" of-type="Enum" usage="input" required="false">
+      <value name="yes" display-name-key="Yes" description-key="Show lable for the selected option">yes</value>
+      <value name="no" display-name-key="No" description-key="Hide lable for the selected option" default="true">no</value>
+    </property>
+    <resources>
+      <code path="index.ts" order="1" />
+      <css path="css/main.css" order="1" />
+      <css path="css/moretoggles.min.css" order="1" />
+      <resx path="strings/MoreTogglesControl.1033.resx" version="1.0.0" />
+    </resources>
+  </control>
+</manifest>
